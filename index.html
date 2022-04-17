@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BIRDWATCHING</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      BIRDWATCHING: a light and sound memory game
+    </h1>
+    
+    <p>
+      Welcome to sunny southern California! You're here on a mission: to befriend the birds you hear by replicating their song.<br>
+      You'll hear a sequence of bird calls. To befriend the birds (and win the game), you must repeat a sequence of 8 calls in the correct order.
+    </p>
+    
+    <div id="startBtnArea">
+      <button id="startBtn" onclick="startGame()">
+        Start
+      </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        Stop
+      </button>
+    </div>
+    
+    <div id="timer" class="hidden"></div>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="playBird(1)" onmouseup="pauseBird(1)">
+        <p class="birdLabel" id="caption1">Crow</p>
+        <img id="bird1" src="https://celebrateurbanbirds.org/wp-content/uploads/2016/08/american-crow-1024x1024.png" alt="American Crow">
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="playBird(2)" onmouseup="pauseBird(2)">
+        <p class="birdLabel" id="caption2">Brown-Headed Cowbird</p>
+        <img id="bird2" src="https://celebrateurbanbirds.org/wp-content/uploads/2016/08/brown-headed-cowbird-1024x1024.png" alt="Brown-Headed Cowbird">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="playBird(3)" onmouseup="pauseBird(3)">
+        <p class="birdLabel" id="caption3">American Robin</p>
+        <img id="bird3" src="https://celebrateurbanbirds.org/wp-content/uploads/2016/08/american-robin-1024x1024.png" alt="American Robin">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="playBird(4)" onmouseup="pauseBird(4)">
+        <p class="birdLabel" id="caption4">Mourning Dove</p>
+        <img id="bird4" src="https://celebrateurbanbirds.org/wp-content/uploads/2016/08/mourning-dove-1024x1024.png" alt="Mourning Dove">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="playBird(5)" onmouseup="pauseBird(5)">
+        <p class="birdLabel" id="caption5">House Finch</p>
+        <img id="bird5" src="https://celebrateurbanbirds.org/wp-content/uploads/2016/08/house-finch-1024x1024.png" alt="House Finch">
+      </button>
+    </div>
+    
+  </body>
+</html>
