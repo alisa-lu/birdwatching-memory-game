@@ -39,9 +39,16 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+Winning the game:
+![Winning](http://g.recordit.co/HE8HETqJfW.gif)
+
+Losing the game by pressing the wrong button:
+![Losing (Wrong button)](http://g.recordit.co/7oInkco7ec.gif)
+
+Losing the game by timing out:
+![Losing (Timed out)](http://g.recordit.co/weSTzVbPcL.gif)
+
+Demonstration of button functionality:
 ![Button functionality + other features](http://g.recordit.co/biQO8i1dq2.gif)
 
 ## Reflection Questions
