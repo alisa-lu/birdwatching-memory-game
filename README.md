@@ -39,8 +39,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-Winning the game:
-![Winning](http://g.recordit.co/HE8HETqJfW.gif)
+Winning the game: [Winning](http://g.recordit.co/HE8HETqJfW.gif) (link because the gif is too long)
 
 Losing the game by pressing the wrong button:
 ![Losing (Wrong button)](http://g.recordit.co/7oInkco7ec.gif)
