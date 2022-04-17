@@ -19,6 +19,22 @@ function random(num) {
   return Math.floor(1+Math.random()*num)
 }
 
+function hideCaptions() {
+  document.getElementById("caption1").classList.add("hide");
+  document.getElementById("caption2").classList.add("hide");
+  document.getElementById("caption3").classList.add("hide");
+  document.getElementById("caption4").classList.add("hide");
+  document.getElementById("caption5").classList.add("hide");
+}
+
+function showCaptions() {
+  document.getElementById("caption1").classList.remove("hide");
+  document.getElementById("caption2").classList.remove("hide");
+  document.getElementById("caption3").classList.remove("hide");
+  document.getElementById("caption4").classList.remove("hide");
+  document.getElementById("caption5").classList.remove("hide");
+}
+
 function startGame() {
   //initialize game variables
   clearInterval(timerInterval);
@@ -33,11 +49,7 @@ function startGame() {
   document.getElementById("stopBtn").classList.remove("hidden");
   
   //hide the captions and show the timer!
-  document.getElementById("caption1").classList.add("hide");
-  document.getElementById("caption2").classList.add("hide");
-  document.getElementById("caption3").classList.add("hide");
-  document.getElementById("caption4").classList.add("hide");
-  document.getElementById("caption5").classList.add("hide");
+  hideCaptions();
   document.getElementById("timer").classList.remove("hidden");
   
   playClueSequence();
@@ -48,11 +60,7 @@ function stopGame() {
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
   
-  document.getElementById("caption1").classList.remove("hide");
-  document.getElementById("caption2").classList.remove("hide");
-  document.getElementById("caption3").classList.remove("hide");
-  document.getElementById("caption4").classList.remove("hide");
-  document.getElementById("caption5").classList.remove("hide");
+  showCaptions();
   document.getElementById("timer").classList.add("hidden");
 
   clearInterval(timerInterval);
@@ -142,11 +150,15 @@ function playBird(num) {
   audio.loop = true;
   audio.play();
   tonePlaying = true;
+  
+  hideCaptions();
 }
 
 function pauseBird(num) {
   audio.pause();
   tonePlaying = false;
+  
+  showCaptions();
 }
 
 function timer() {
