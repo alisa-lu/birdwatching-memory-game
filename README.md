@@ -108,7 +108,7 @@ I’d also want to test the project out with multiple different people and see i
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/9b81e2caeb9f4bd19c095f88e8f01253)
 
 
 ## License
